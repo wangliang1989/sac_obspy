@@ -27,13 +27,13 @@ os.system('mv *.[enz] seed2sac')
 st = rotate(st, inventory=inv, method="NE->RT")
 write_to_sac(st)
 os.system('mkdir rotate')
-os.system('mv *.[enz] rotate')
+os.system('mv *.[rtz] rotate')
 
 # resample
 st = resample(st, sampling_rate=sampling_rate)
 write_to_sac(st)
 os.system('mkdir resample')
-os.system('mv *.[enz] resample')
+os.system('mv *.[rtz] resample')
 
 # write to sac files
 write_to_sac(st)
